@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  font-family: "Inter", "Roboto", "Helvetica", "Arial", sans-serif !important;
+}
+textarea {
+  border: 1px solid #616161 !important;
+}
+textarea::placeholder {
+  color: #ffffff40 !important;
+}
+textarea:hover {
+  border: 1px solid #f0bf60 !important;
+}
+textarea:focus {
+  border: 1px solid #f0bf60 !important;
+}
+
+:root {
+  --background-color: #f3f3f3;
+  --background-secondary-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --background-color: #000000; /* #141414; */
+  --background-secondary-color: #141414;
+  --text-color: #ffffff;
+}
+
+html,
+body {
+  height: 100% !important;
+  background-color: var(--background-color);
+}
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.searchBar button,
+.searchBar input {
+  height: 36px !important;
+}
+
+.ant-message-notice-content {
+}
+
+.ant-input-outlined {
+}
+
+.ant-input-textarea {
+  border-color: #d9d9d9 !important;
+}
+
+.ant-input-textarea::placeholder {
+  color: #d9d9d9 !important;
+}
+
+.ant-input-outlined input::placeholder {
+  opacity: 0.6;
+}
+
+.ant-modal-content {
+}
+.ant-modal-title {
+}
+
+.custom-tree .ant-tree-treenode {
+  width: 100%;
+}
+
+.custom-tree .ant-tree-node-content-wrapper {
+  width: 100%;
+}
+
+.custom-tree .ant-tree-child-tree {
+  padding-left: 0 !important;
+}
+
+.custom-tree .ant-tree-treenode-selected .ant-tree-node-content-wrapper {
+}
+
+.dashboard-tabs .ant-tabs-nav {
+  margin-left: 32px !important;
+  margin-right: 32px !important;
+}
+@media screen and (max-width: 1024px) {
+  .dashboard-tabs .ant-tabs-nav {
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+  }
+}
+
+.ant-card-head,
+.ant-card-body {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  background-color: var(--background-secondary-color) !important;
+  border-color: var(--text-color) !important;
+}
+.ant-drawer-content-wrapper {
+  width: 300px !important;
+}
+@media screen and (max-width: 640px) {
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}
+.reports-tabs .ant-tabs-nav,
+.work-orders-tabs .ant-tabs-nav,
+.asset-tabs .ant-tabs-nav {
+  margin: 0px !important;
+}
+
+.reports-tabs .ant-tabs-nav-wrap,
+.work-orders-tabs .ant-tabs-nav-wrap,
+.asset-tabs .ant-tabs-nav-wrap {
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .reports-tabs .ant-tabs-nav-wrap,
+  .work-orders-tabs .ant-tabs-nav-wrap,
+  .asset-tabs .ant-tabs-nav-wrap {
+    margin-left: 12px;
+  }
+}
+
+.reports-tabs .ant-tabs-nav::before,
+.work-orders-tabs .ant-tabs-nav::before,
+.asset-tabs .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+.reports-tabs .ant-tabs-tab,
+.work-orders-tabs .ant-tabs-tab,
+.asset-tabs .ant-tabs-tab {
+  border-radius: 0px !important;
+  margin-left: 0px !important;
+}
+
+.reports-tabs .ant-tabs-tab:nth-child(1),
+.work-orders-tabs .ant-tabs-tab:nth-child(1),
+.asset-tabs .ant-tabs-tab:nth-child(1) {
+  border-radius: 6px 0px 0px 6px !important;
+}
+
+.reports-tabs .ant-tabs-tab:nth-child(4) {
+  border-radius: 0px 6px 6px 0px !important;
+}
+
+.work-orders-tabs .ant-tabs-tab:nth-child(2) {
+  border-radius: 0px 6px 6px 0px !important;
+}
+
+/* New style for asset-tabs 4th child */
+.asset-tabs .ant-tabs-tab:nth-child(4) {
+  border-radius: 0px 6px 6px 0px !important;
+}
+
+.schdeule .ant-picker-panel {
+}
+
+@media screen and (max-width: 1280px) {
+  .schdeule .ant-picker-body {
+    overflow-x: auto !important;
+  }
+  .schdeule .ant-picker-date-panel table {
+    width: 1000px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .schdeule .ant-picker-date-panel table {
+    width: 800px !important;
+  }
+}
+
+.ant-spin {
+  color: #000 !important;
+}
